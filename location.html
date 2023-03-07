@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset-"UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Moy sayt</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+	
+	<script src="src/jquery-3.5.1.min.js"></script>
+	
+    <script src="js/script.js"></script>
+	<script src="js/popup.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="myTopnav">
+	    <img class="logotip" src="img/icons/icon-2.png" alt="Логотип сайта">
+        <ul class="menu">
+          <li><a href="index.html" data-link="top" title="На главную">Главная</a></li>
+		  <li><a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a></li>
+          <li><a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a></li>
+		  <li><a href="services.html" class="menu-element" title="Услуги">Услуги</a></li>
+		  <li><a href="shop.html" class="menu-element" title="Магазин">Магазин</a></li>
+		  <li><a href="blog.html" class="menu-element" title="Блог сайта">Блог</a></li>
+		  <li><a href="location.html" class="menu-element" title="Контакты компании">Найти</a></li>
+        </ul>
+		<div id="hamburger" class="icon">&#9776;</div>  
+      </nav>
+    </header>
+  
+  <main>
+    
+	<section id="top"> 
+	  <img class="top-image-sub" src="img/Tachka.jpg" alt="Обложка сайта">
+	</section>
+	<section id="location">
+	  <h1 class="main-title">Наши контакты</h1>
+	  <div class="delimiter"></div>
+	  <p class="main-title-description">Здесь вы не найдете ничего полезного, можете дальше заниматься своими делами.</p>
+	  <div class="contact-container">
+	    <div class="row">
+		  <p>Город:</p>
+		  <p>Остров чудес</p>
+		</div>
+		<div class="row">
+		  <p>Улица:</p>
+		  <p>Пушкина, дом Колотушкина</p>
+		</div>
+		<div class="row">
+		  <p>Телефон:</p>
+		  <p>0 (533) 0-00-0 и еще мильен нулей</p>
+		</div>
+		<div class="row">
+		  <p>Электронный адрес:</p>
+		  <p>U-nas@pochti.net</p>
+		</div>
+	  </div>
+	</section>
+	<section id="map">
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa5164895b34ed62edaa1ee90eb2830f0c79eae098da539b4d1b61a281fd0c839&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+	</section>
+	<section class="contact" id="contact">
+	  <h2 class="main-title">Нам и так все известно</h1>
+	  <div class="delimiter"></div>
+	  <p class="main-title-description">Но с радостью выслушаем любой ваш секрет</p>
+	  <form id="contactform" method="post" action="contact.php" class="contact-form">
+	    <input name="name" type="text" class="col" placeholder="Ваше имя *" required>
+	    <input name="email" type="email" class="col" placeholder="E-mail адрес *" required>
+	    <input name="theme" type="text" class="col" placeholder="Тема сообщения *">
+	    <input name="phone" type="tel" class="col" placeholder="Номер телефона *">
+	    <textarea name="comment" class="row-col" placeholder="Сообщение *" required></textarea>
+	    <input type="submit" id="submit" class="submit btn" value="Отправить сообщение">
+	  </form>
+	</section>
+    
+	
+    </main>
+	<footer>
+	  <nav>
+        <ul class="menu">
+          <li><a href="index.html" data-link="top" title="На главную">Главная</a></li>
+		  <li><a href="#portfolio" class="menu-element" data-link="portfolio" title="Фотогалерея">Галерея</a></li>
+          <li><a href="#contact" class="menu-element" data-link="contact" title="Контактная информация">Контакты</a></li>
+		  <li><a href="services.html" class="menu-element" title="Услуги">Услуги</a></li>
+		  <li><a href="shop.html" class="menu-element" title="Магазин">Магазин</a></li>
+		  <li><a href="blog.html" class="menu-element" title="Блог сайта">Блог</a></li>
+		  <li><a href="location.html" class="menu-element" title="Контакты компании">Найти</a></li>
+        </ul>	  
+	  </nav>
+	  <div class="brand">
+	    <img src="img/icons/icon-2.png" alt="Логотип сайта">
+		<span>AWESOME</span>
+	  </div>
+	  <div class="social">
+	    <a href="#" title="Facebook" target="_blank">
+          <img class="social-img" src="img/icons/001-facebook.png" alt="Facebook">	  
+	    </a>
+	    <a href="#" title="LinkedIn" target="_blank">
+	      <img class="social-img" src="img/icons/004-linkedin.png" alt="LinkedIn">
+	    </a>
+	    <a href="#" title="Instagram" target="_blank">
+	      <img class="social-img" src="img/icons/005-instagram.png" alt="Instagram"> 
+	    </a>
+	    <a href="#" title="Twitter" target="_blank">
+	      <img class="social-img" src="img/icons/007-twitter.png" alt="Twitter">
+  	    </a>
+	    <a href="#" title="Tumblr" target="_blank">
+	      <img class="social-img" src="img/icons/010-tumblr.png" alt="Tumblr">
+	    </a>	  
+	  </div>
+	  <div class="copyright">© Moy sayt 2020</div>
+	</footer>
+  </body>
+</html>
+
